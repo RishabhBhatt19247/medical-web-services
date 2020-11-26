@@ -1,0 +1,51 @@
+<html>
+    <head>
+        <link rel="icon" href="https://i.pinimg.com/236x/f4/c8/51/f4c851183b5ed083a6b08340a9c0a527--medical-tattoos-nurse-tattoos.jpg" type="image/jpg">
+        <style>
+            body{
+                background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRpFPy6dGNBfiUpgdLplQI14zP5rimPjmAdqw&usqp=CAU);
+                background-attachment:fixed;
+                background-repeat:repeat;
+               }
+            .letter{
+                background-color:wheat;
+                text-align: center;
+                height:1420px;
+                width:800px;
+                margin-left:270px;
+            }  
+            img{
+                margin-left: auto;
+                margin-right: auto;
+                display:block;
+            } 
+            h2{
+                color:black;
+                font-size:30px;
+                text-align: center;
+                font-style: oblique;
+            }
+            p{
+                color:red;
+                font-size:27px;
+            }
+            button{
+                scale:20px;
+            }
+        </style>
+    </head>
+    <body>
+    <div class='letter'>
+        <h3>congratulation! you have successfully booked the Appointment</h3><br>
+        <img src="https://i.pinimg.com/236x/f4/c8/51/f4c851183b5ed083a6b08340a9c0a527--medical-tattoos-nurse-tattoos.jpg" class="img" alt="logo of Indian Medical Webservices" width="200" height="200">
+        <h1>Allotment Letter</h1><br><h2>Name: {{NAME}}</h2><br><h2>Age: {{AGE}}</h2><br><h2>Date of Appointment: {{DATE}}</h2><br>
+        <h2>Time of Appointment: {{TIME}}</h2><br><h2>Your Problem: {{PROBLEM}}</h2><br><h2>Appointment at Place: {{PLACE}}</h2><br><h2>Appointment Booked With: {{DOCTOR}}</h2><br>
+         <h2>Note:</h2><p>Dear {{NAME}},If all the given information are correct,then print this allotment letter,We will send you payment link through
+              {{EMAIL}} ,pay the fee and download fee reciept ,and come the given place at given time with Allotment letter and Fee receipt</p>
+              <button onclick="window.print()"><h1>Print</h1></button>
+    </div>
+       
+    </body>
+</html>
+
+

@@ -1,0 +1,125 @@
+<html>
+    <head>
+        <link rel="icon" href="https://i.pinimg.com/236x/f4/c8/51/f4c851183b5ed083a6b08340a9c0a527--medical-tattoos-nurse-tattoos.jpg" type="image/jpg">
+        <style>
+            body{
+                background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRpFPy6dGNBfiUpgdLplQI14zP5rimPjmAdqw&usqp=CAU);
+                background-attachment:fixed;
+                background-repeat:repeat;
+               }
+            h1{
+                color:black;
+                font-size:80px;
+                text-align: center;
+                font-style: oblique;
+            }
+            img{
+                margin-left: auto;
+                margin-right: auto;
+                display:block;
+            }
+            p{
+                color: darkgreen;
+                font-size: 30px;
+                text-align: center;
+                font-style: oblique;
+            }
+            .foot{
+                background-color:black;
+                left: 0;
+                bottom: 0;
+                width: 100%;
+                height:550 px;
+                color: floralwhite;
+                text-align: center;
+            }
+            .end{
+                height:60;
+                text-align:center;
+                background-color: rgb(206, 199, 197);
+            }
+            .end a{
+                float: left;
+                text-align: center;
+                margin-left: 200;
+            }
+            .open-button{
+                background-color: cornsilk;
+                color:crimson;
+                font-size: medium;
+            }
+            .form-popup{
+                background-color:honeydew;
+                color: black;
+                width:50%;
+                text-align: center;
+                display: none;
+            }
+        </style>
+    </head>
+    <body>
+     <button type="button" class="open-button" onclick="openform()">login</button>
+        <div class="form-popup" id="myform">
+            <form action="login/" method="post" class="form-container">
+                <h1>Login</h1>
+                <label for="loginusername"><b>Username</b></label>
+                <input type="text" placeholder="enter username" name="loginusername" required>
+                <br><br><br>
+                <label for="loginpassword"><b>Password</b></label>
+                <input type="text" placeholder="enter password" name="loginpassword" required>
+                 <br><br><br>
+                 {% csrf_token %}
+                <button type="submit" class="open-button">Login</button>
+                <button type="button" class="open-button" onclick="closeform()">close</button>     
+              </form>
+            </div>   
+        <button type="button" class="open-button" onclick="openform2()">Sign in</button>
+        <div class="form-popup" id="myform2">
+            <form action="signup/" method="post" class="form-container">
+                <h1>Sign in</h1>
+                <label for="username"><b>Username</b></label>
+                <input type="text" placeholder="enter username" name="username" required>
+                <br><br><br>
+                <label for="password"><b>Password</b></label>
+                <input type="password" placeholder="enter password" name="password" required>
+                 <br><br><br>
+                 <label for="email"><b>EMAIL</b></label>
+                 <input type="email" placeholder="enter your email" name="email" required>
+                 <br><br><br>
+                 {% csrf_token %}
+                <button type="submit" class="open-button">Sign in</button>
+                <button type="button" class="open-button" onclick="closeform2()">close</button>       
+            </form>
+        </div>
+        <script>
+            function openform(){
+                document.getElementById("myform").style.display="block";
+               }
+            function closeform(){
+                document.getElementById("myform").style.display="none";
+                }
+            function openform2(){
+                 document.getElementById("myform2").style.display="block";
+                }
+            function closeform2(){
+                document.getElementById("myform2").style.display="none";
+                }
+       </script>
+        <img src="https://i.pinimg.com/236x/f4/c8/51/f4c851183b5ed083a6b08340a9c0a527--medical-tattoos-nurse-tattoos.jpg" class="img" alt="logo of Indian Medical Webservices" width="200" height="200">
+        <h1>Indian Medical Webservices</h1>
+        <p>Easily get the appointment of Best Specialist Of Country</p> 
+       <div class="foot"><h3><marquee>for help: 6394615048</marquee> </h3>
+        <br>
+        <br>
+        <h3>you can also connect with us through mails</h3>
+        <h3>MAIL:rishabh.19247@knit.ac.in</h3>
+        <h3>MAIL:rishabh.knit2002@gmail.com</h3>
+        <h3>All copyrights are reserved by Rishabh Bhatt</h3>
+        <div class="end"><a href="https://www.facebook.com/risabh.bhatt.1"><img src="https://image.shutterstock.com/image-photo/kiev-ukraine-april-27-2015-260nw-278925056.jpg" alt="facebook" width="80" height="60"></a>
+            <a href="https://www.instagram.com/risabh.bhatt.1/?hl=en"><img src="https://pbs.twimg.com/profile_images/1306051401236099072/nuSA8oqW_400x400.jpg" alt="instagram" width="80" height="60"></a>
+            <a href="https://www.linkedin.com/in/rishabh-b-bb66481b0"><img src="https://image.shutterstock.com/image-photo/kiev-ukraine-february-19-2015-260nw-259035356.jpg" alt="linkedin" width="80" height="60"></a>
+            <a href="https://mobile.twitter.com/Rishabh38869479"><img src="https://lh3.googleusercontent.com/wIf3HtczQDjHzHuu7vezhqNs0zXAG85F7VmP7nhsTxO3OHegrVXlqIh_DWBYi86FTIGk" alt="twitter" width="80" height="60"></a>
+        </div>
+       </div>
+    </body>
+</html>
